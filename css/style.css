@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*, h1 {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    background-color: #EFE6E4;
+    color: #533738;
+    font-weight: 400;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.button {
+    color: #533738;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #CC8B86;
+}
+
+/* header */
+.header a {
+    color: inherit;
+}
+
+/* hero */
+.hero {
+    background-image: url("../images/header-background.jpg");
+}
+
+.hero__title {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+}
+
+.hero__description {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* about us */
+.about-us__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.about-us__information__text {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.about-us__advantages {
+    background-color: #8D7370;
+}
+
+.advantages__list {
+    font-size: 50px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+/* portfolio */
+.portfolio__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.portfolio__project__description {
+    background-color: rgba(100, 72, 69, 0.8);
+    color: #FFFFFF;
+}
+
+.portfolio__project__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.portfolio__project__text {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.portfolio__button {
+    color: #533738;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    border: none;
+    background: none;
+}
+
+/* team */
+.team {
+    background-color: #E2C4BA;
+}
+
+.team__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.team__item p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* work-process */
+.work-process {
+    background-color: #E2C4BA;
+}
+
+.work-process__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.work-process__item {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.work-process__item__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    background-color: #8D7370;
+    border-radius: 50%;
+}
+
+/* reviews */
+.rewiews__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.rewiews__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    color: #F5F2ED;
+    border: none;
+    border-radius: 50%;
+    background-color: #CC8B86;
+}
+
+.review__text {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.review__text cite {
+    font-style: normal;
+}
+
+/* application */
+.application {
+    background-color: #8D7370;
+}
+
+.application__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.application__subtitle {
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.application__form__elem {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 508px;
+    height: 35px;
+    border-bottom: 1px solid #FFFFFF;
+    font-size: 18px;
+    line-height: 30px;
+    color: #F6EDE9;
+}
+
+.application__form__input {
+    flex: 1;
+    border: none;
+    background-color: #8D7370;
+    color: #FFFFFF;
+}
+
+.application__form__input:focus-visible {
+    outline: none;
+}
+
+.application__form__button {
+    border: none;
+}
+
+/* footer */
+.footer {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.footer__telephone {
+    color: #533738;
+}
