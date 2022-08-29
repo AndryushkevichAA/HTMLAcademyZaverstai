@@ -8,39 +8,40 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
+        <div class="header__container container">
             <div class="header__logo">
-                <img src="images/logo.svg" alt="Логотип" width="25" height="25">
-                <span>SCANDI</span>
+                <a class="logo__link"><img src="images/logo.svg" alt="Логотип." width="25" height="25">SCANDI</a>
             </div>
 
-            <nav>
-                <ul class="header__nav__list">
-                    <li class="header__nav__item"><a href="#about-us">О компании</a></li>
-                    <li class="header__nav__item"><a href="#portfolio">Портфолио</a></li>
-                    <li class="header__nav__item"><a href="#team">Команда</a></li>
-                    <li class="header__nav__item"><a href="#work-process">Как мы работаем</a></li>
-                    <li class="header__nav__item"><a href="#reviews">Отзывы клиентов</a></li>
-                    <li class="header__nav__item"><a href="#application">Оставить заявку</a></li>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about-us">О компании</a></li>
+                    <li class="nav__item"><a href="#portfolio">Портфолио</a></li>
+                    <li class="nav__item"><a href="#team">Команда</a></li>
+                    <li class="nav__item"><a href="#work-process">Как мы работаем</a></li>
+                    <li class="nav__item"><a href="#reviews">Отзывы клиентов</a></li>
+                    <li class="nav__item"><a href="#application">Оставить заявку</a></li>
                 </ul>
             </nav>
 
-            <a href="tel: +7 (981) 857-46-24">+7 (981) 857-46-24</a>
+            <a href="tel:+7(981)857-46-24" class="header__tel">+7 (981) 857-46-24</a>
         </div> 
-    </header>
-    <main>
-        <section class="hero">
-            <h1 class="hero__title">Поможем сделать вашу квартиру уютнее</h1>
-            <p class="hero__description">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
-            <a class="button hero__button" href="#application">Оставить заявку</a>
-        </section>
 
+        <section class="hero">
+            <div class="hero__container container">
+                <h1 class="hero__title">Поможем сделать вашу квартиру уютнее</h1>
+                <p class="hero__description">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>
+                <a class="button hero__button" href="#application">Оставить заявку</a>
+            </div>
+        </section>
+    </header>   
+    <main>
         <section id="about-us" class="about-us">
-            <div class="about-us__container">
+            <div class="about-us__container container">
                 <h2 class="about-us__title">О нас</h2>
                 <div class="about-us__information">
-                    <img src="images/vase.jpg" alt="Ваза" width="444" height="465">
-                    <div class="about-us__information__text">
+                    <img class="about-us__image" src="images/vase.jpg" alt="Белая ваза с сухоцветами." width="444" height="465">
+                    <div class="about-us__text">
                         <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. 
                             Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  
                             что по-настоящему вдохновляет дизайнеров нашей студии.</p>
@@ -48,46 +49,70 @@
                             « Да! Это именно то, что действительно достойно моего дома!»</p>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="about-us__advantages">
-                    <ul class ="advantages__list">
-                        <li class ="advantages__item">
-                            <p>5</p>
-                            <p>лет опыта</p>
-                        </li>
-                        <li class ="advantages__item">
-                            <p>100</p>
-                            <p>проектов</p>
-                        </li>
-                        <li class ="advantages__item">
-                            <p>10</p>
-                            <p>наград</p>
-                        </li>
-                    </ul>
-                </div>
+        <section class="advantages">
+            <div class="advantages__container container">
+                <ul class ="advantages__list">
+                    <li class ="advantages__item">
+                        <p>5</p>
+                        <p>лет опыта</p>
+                    </li>
+                    <li class ="advantages__item">
+                        <p>100</p>
+                        <p>проектов</p>
+                    </li>
+                    <li class ="advantages__item">
+                        <p>10</p>
+                        <p>наград</p>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <section id="portfolio" class="portfolio">
-            <div class="portfolio__container">
+            <div class="portfolio__container container">
                 <h2 class="portfolio__title">Наши работы</h2>
                 <div class="portfolio__gallery">
-                    <div class="portfolio__project">
-                        <img src="images/flat1.jpg" alt="Спальня" width="488" height="451">
-
-                        <div class="portfolio__project__description">
-                            <h3 class="portfolio__project__title">Квартира-студия 30 кв.м.</h3>
-                            <p class="portfolio__project__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                    <figure class="portfolio__project">
+                        <img src="images/flat1.jpg" alt="Спальня." width="488" height="451">
+                        <figcaption class="project__description">
+                            <h3 class="description__title">Квартира-студия 30 кв.м.</h3>
+                            <p class="description__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
                                 на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
-                        </div>
-                    </div>
-                        
-                    <img src="images/flat2.jpg" alt="Кухня" width="692" height="451">
-                    <img src="images/flat3.jpg" alt="Гостиная" width="692" height="451">
-                    <img src="images/flat4.jpg" alt="Ванная комната" width="488" height="451">
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="portfolio__project">
+                        <img src="images/flat2.jpg" alt="Кухня." width="692" height="451">
+                        <figcaption class="project__description">
+                            <h3 class="description__title">Квартира-студия 30 кв.м.</h3>
+                            <p class="description__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                                на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                        </figcaption>
+                    </figure>
+                    
+                    <figure class="portfolio__project">
+                        <img src="images/flat3.jpg" alt="Гостиная." width="692" height="451">
+                        <figcaption class="project__description">
+                            <h3 class="description__title">Квартира-студия 30 кв.м.</h3>
+                            <p class="description__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                                на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="portfolio__project">
+                        <img src="images/flat4.jpg" alt="Ванная комната." width="488" height="451">
+                        <figcaption class="project__description">
+                            <h3 class="description__title">Квартира-студия 30 кв.м.</h3>
+                            <p class="description__text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+                                на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                        </figcaption>
+                    </figure>
                 </div>
-                <button class="portfolio__button" type="button">Смотреть ещё 
-                    <svg width="61" height="16" viewbox="0 0 61 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <button class="portfolio__button" type="button">Смотреть ещё
+                    <svg width="60" height="16" viewbox="0 0 61 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M60.7071 8.70711C61.0976 8.31658 61.0976 7.68342 60.7071 7.29289L54.3432 0.928932C53.9526 0.538408 53.3195 0.538408 52.9289 0.928932C52.5384 1.31946 52.5384 1.95262 52.9289 2.34315L58.5858 8L52.9289 13.6569C52.5384 14.0474 52.5384 14.6805 52.9289 15.0711C53.3195 15.4616 53.9526 15.4616 54.3432 15.0711L60.7071 8.70711ZM0 9H60V7H0V9Z"/>
                     </svg>
                 </button>
@@ -95,21 +120,21 @@
         </section>
 
         <section id="team" class="team">
-            <div class="team__container">
+            <div class="team__container container">
                 <h2 class="team__title">Команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img src="images/chief-designer.jpg" alt="Главный дизайнер" width="320" height="253">
+                        <img class="team__photo" src="images/chief-designer.jpg" alt="Главный дизайнер Маша." width="320" height="253">
                         <p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
                             и помогает сделать вашу квартиру красивой и уютной.</p>
                     </li>
                     <li class="team__item">
-                        <img src="images/manager.jpg" alt="Менеджер" width="320" height="253">
+                        <img  class="team__photo" src="images/manager.jpg" alt="Менеджер Саша." width="320" height="253">
                         <p>С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы
                             и ответит на все вопросы.</p>
                     </li>
                     <li class="team__item">
-                        <img src="images/designer.jpg" alt="Дизайнер" width="320" height="253">
+                        <img class="team__photo" src="images/designer.jpg" alt="Дизайнер Катя." width="320" height="253">
                         <p>Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает,
                             как обустроить дом так, чтобы вам понравилось.</p>
                     </li>
@@ -118,23 +143,23 @@
         </section>
 
         <section id="work-process" class="work-process">
-            <div class="work-process__container">
+            <div class="work-process__container container">
                 <h2 class="work-process__title">Как мы работаем</h2>
                 <ul class="work-process__list">
                     <li class="work-process__item">
-                        <div class="work-process__item__number">1</div>
+                        <div class="item__number">1</div>
                         <p>Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</p>    
                     </li>
                     <li class="work-process__item">
-                        <div class="work-process__item__number">2</div>
+                        <div class="item__number">2</div>
                         <p>Подбираем мебель, текстиль, аксессуары. Делаем 3D-визуализацию.</p>    
                     </li>
                     <li class="work-process__item">
-                        <div class="work-process__item__number">3</div>
+                        <div class="item__number">3</div>
                         <p>Находим нужные магазины, помогаем с доставкой и оплатой товаров.</p>    
                     </li>
                     <li class="work-process__item">
-                        <div class="work-process__item__number">4</div>
+                        <div class="item__number">4</div>
                         <p>Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для мелочей</p>    
                     </li>
                 </ul>
@@ -142,57 +167,57 @@
         </section>
 
         <section id="reviews" class="reviews">
-            <div class="reviews__container">
-                <h2 class="rewiews__title">Отзывы</h2>
-                <button class="rewiews__button" type="button">
-                    <svg width="33" height="16" viewbox="0 0 33 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z"/>
-                    </svg>
-                </button>
-                <article class="review">
-                    <div class="review__text">
-                        <blockquote cite="#">
-                            <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
-                            <p>Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко!</p>
-                            <p>Буду советовать и своим друзьям к вам обращаться!»</p>
-                        </blockquote>
-                        <cite>АННА БЕЛОВСКАЯ</cite>
-                    </div>
-                    <div class="review photos">
+            <div class="reviews__container container">
+                <h2 class="reviews__title">Отзывы</h2>
+                <div class="reviews__slider">
+                    <button class="reviews__button" type="button">
+                        <svg width="33" height="16" viewbox="0 0 33 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41421 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM33 9H1V7H33V9Z"/>
+                        </svg>
+                    </button>
+                    <article class="review">
+                        <div class="review__text">
+                            <blockquote cite="#">
+                                <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p><br>
+                                <p>Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко!</p><br>
+                                <p>Буду советовать и своим друзьям к вам обращаться!»</p>
+                            </blockquote>
+                            <cite>АННА БЕЛОВСКАЯ</cite>
+                        </div>
                         <img src="images/review-photo1.jpg" alt="Гостиная" width="407" height="272">
                         <img src="images/review-photo2.jpg" alt="Кухня" width="407" height="272">
-                    </div>
-                </article>
-                <button class="rewiews__button" type="button">
-                    <svg width="33" height="16" viewbox="0 0 33 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z"/>
-                    </svg>
-                </button>
+                    </article>
+                    <button class="reviews__button" type="button">
+                        <svg width="33" height="16" viewbox="0 0 33 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32.7071 8.70711C33.0976 8.31658 33.0976 7.68342 32.7071 7.29289L26.3431 0.928932C25.9526 0.538408 25.3195 0.538408 24.9289 0.928932C24.5384 1.31946 24.5384 1.95262 24.9289 2.34315L30.5858 8L24.9289 13.6569C24.5384 14.0474 24.5384 14.6805 24.9289 15.0711C25.3195 15.4616 25.9526 15.4616 26.3431 15.0711L32.7071 8.70711ZM0 9H32V7H0V9Z"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
 
         <section id="application" class="application">
-            <div class="application__container">
-                <h2 class="application__title">Оставить заявку</h2>
-                <p class="application__subtitle">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
+            <div class="application__container container">
                 <form action="#" class="application__form">
-                    <div class="application__form__elem">
-                        <label for="name" class="application__form__label">Ваше имя </label>
-                        <input type="text" id="name" class="application__form__input">
+                    <h2 class="application__title">Оставить заявку</h2>
+                    <p class="application__subtitle">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
+                    <div class="form__elem">
+                        <label for="name" class="form__label">Ваше имя </label>
+                        <input type="text" id="name" class="form__input">
                     </div>
-                    <div class="application__form__elem">
-                        <label class="application__form__label" for="tel">Введите телефон</label>
-                        <input type="tel" id="tel" class="application__form__input">
+                    <div class="form__elem">
+                        <label class="form__label" for="tel">Введите телефон</label>
+                        <input type="tel" id="tel" class="form__input">
                     </div>
-                    <button class="button application__form__button">Оставить заявку</button>
+                    <button class="button form__button">Оставить заявку</button>
                 </form>
                 <img src="images/map.png" alt="Местоположение на карте" class="map" width="590" height="624">
             </div>
         </section>    
     </main>
     <footer class="footer">
-        <div class="footer__container">
-            <a href="#" class="footer__telephone">+7 (981) 857-46-24</a>
+        <div class="footer__container container">
+            <a href="tel:+7(981)857-46-24" class="footer__telephone">+7 (981) 857-46-24</a>
             <p class="footer__address">г.Санкт-петербург, ул. Большая Конюшенная, 19</p>
             <p class="footer__owner">ИП Королёва А.А.</p>
         </div>
